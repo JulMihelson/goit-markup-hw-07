@@ -32,19 +32,20 @@ body {
   padding: 0;
 }
 .container {
-  max-width: 1158px;
+  width: 480px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 100%;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 100%;
-    margin: 0 auto;
+    width: 1158px;
+
     padding: 0 15px;
   }
 }
@@ -71,8 +72,10 @@ body {
   }
 }
 .second-section-margin {
+  width: 1158px;
   padding-top: 96px;
   padding-bottom: 96px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .second-section-margin {
@@ -85,6 +88,11 @@ body {
   }
 }
 .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -146,10 +154,7 @@ header {
   letter-spacing: 0.02em;
   line-height: calc(40 / 36);
 }
-@media screen and (min-width: 768px) {
-  /* .menu-main-page > .headlines-three {
-  } */
-}
+
 @media screen and (min-width: 1200px) {
   .menu-main-page > .headlines-three {
     font-size: 20px;
@@ -200,12 +205,16 @@ header {
   line-height: 14px;
   padding-bottom: 32px;
 }
-
+.uppermenu .link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: inline-block;
+}
 /* LINK */
 
 .link {
   color: var(--text-slate);
-  font-size: 118px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
@@ -235,7 +244,7 @@ header {
 }
 .link-contacts {
   color: var(--text-slate);
-  font-size: 118px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -376,8 +385,9 @@ header {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* .our-team-title {
-  } */
+  .our-tem-title {
+    display: block;
+  }
 }
 .footer-text-medium {
   color: var(--white-text);
@@ -441,9 +451,8 @@ header {
     max-width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 64px;
-    column-gap: 24px;
+
+    gap: 24px;
   }
   .list > li {
     max-width: calc((100% - 24px) / 2);
@@ -768,13 +777,15 @@ a {
 
 @media screen and (min-width: 768px) {
   .customer-icons-section {
-    max-width: 768px;
+    margin: 0 auto;
+    max-width: 552px;
     row-gap: 72px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .customer-icons-section {
+    max-width: 100%;
     flex-wrap: nowrap;
     margin: 0 auto;
   }
