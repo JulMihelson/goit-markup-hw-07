@@ -740,7 +740,7 @@
           <legend class="modal-form-title">
             Leave your contacts and we will call you back
           </legend>
-          <label for="username"
+          <label class="name-line" for="username"
             >Name
             <span class="name-input-line">
               <input type="text" class="input-name" name="username" required />
@@ -750,7 +750,7 @@
             </span>
           </label>
 
-          <label for="telephone"
+          <label class="tel-line" for="telephone"
             >Phone
             <span class="phone-input-line">
               <svg class="phone-icon" width="13" height="13">
@@ -766,7 +766,7 @@
             </span>
           </label>
 
-          <label for="email-address"
+          <label class="email-line" for="email-address"
             >Email
             <span class="email-input-line">
               <svg class="email-icon" width="15" height="12">
@@ -782,16 +782,17 @@
             </span>
           </label>
 
-          <label for="comment"
+          <label class="comment-input-line" for="comment"
             >Comment
-            <span class="comment-input-line">
-              <input
-                type="textarea"
-                class="comment"
-                placeholder="Text input"
-                name="comment-text"
-              />
-            </span>
+            <!-- <span class="comment-input-line"> -->
+            <textarea
+              class="comment"
+              width="360"
+              height="120"
+              placeholder="Text input"
+              name="comment-text"
+            ></textarea>
+            <!-- </span> -->
           </label>
           <input
             id="mark"
@@ -802,7 +803,7 @@
           <label for="mark" class="checkbox">
             <span class="checkbox-custom">
               <svg class="checkbox-icon" width="10" height="8">
-                <use href="../images/svg/icons.svg#checkbox-icon"></use>
+                <use href="/images/svg/icons.svg#checkbox-icon"></use>
               </svg>
             </span>
 
